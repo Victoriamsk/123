@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body class="main">
+    <header class="main__header header" id="main">
+        <div class="container container--header">
+            <div class="header__inner">
+                <div class="header__logo logo">
+                    <a class="logo__link" href="#">
+                        <img class="logo__image logo__image--size-s" src="img/small_logo.png" alt="AXIT">
+                    </a>
+                </div>
+                <div class="header__burger header-burger">
+                    <span class="header-burger__lines"></span>
+                </div>
+                <div class="header__menubar">
+                    <ul class="submenu">
+                        <li v-for="link in links" class="submenu__item">
+                            <a class="submenu__link" href="#">{{ link }}</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="registration-block">
+            <div class="container container--registration">
+                <div class="registration-block__intro registration-block-intro">
+                    <div class="registration-block-intro__logo logo">
+                        <a class="logo__link" href="#">
+                            <img class="logo__image logo__image--size-s" src="img/medium_logo.png" alt="AXIT">
+                        </a>
+                    </div>
+
+                    <div class="registration-block-intro__subtitle title title--white title--size-m">
+                        Modern axure template for beautiful prototypes
+                    </div>
+
+                    <div class="registration-block-intro__line line line--white"></div>
+
+                    <div class="registration-block-intro__text text text--white text--size-m">
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Officia, explicabo impedit laboriosam
+                        distinctio laborum, reprehenderit delectus beatae facilis doloremque quo culpa maiores ratione
+                        quasi. Nobis alias at corporis magnam quod.
+                    </div>
+                    <a class="registration-block-intro__button button button--white" href="#" download="">Download</a>
+                </div>
+
+                <div class="registration-block__form registration-block-form">
+                    <div class="registration-block-form__heading registration-block-form-heading">
+                        Try your <span
+                            class="registration-block-form-heading__text registration-block-form-heading__text--orange">free</span>
+                        trial today
+                    </div>
+                    <div class="registration-block-form__auth registration-block-form-auth">
+                        <input placeholder="Name" type="text" class="registration-block-form-auth__input">
+                        <input placeholder="Email" type="text" class="registration-block-form-auth__input">
+                        <input placeholder="Password" type="text" class="registration-block-form-auth__input">
+                    </div>
+                    <div class="registration-block-form__started">
+                        <button class="registration-block-form__button button button--orange">Get started</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- БЛОК СОШИАЛ МЕДИА -->
+        <section class="social-media" id="social-media">
+            <div class="container">
+                <div class="social-media__block social-media-block">
+                    <div class="social-media-block__title title title--black">Social Media</div>
+                    <div class="social-media-block__text text text--grey text--size-s">Lorem ipsum dolor sit amet,
+                        consectetur
+                        adipiscing elit.
+                        Aenean euismod bibendum laoreet.</div>
+                </div>
+
+                <ul class="social-media-icons__list social-media__icons social-media-icons">
+                    <li v-for="image in images" class="social-media-icons__item">
+                        <img :src="`img/social/${image}.png`" class="social-media-icons__img" alt="">
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- БЛОК с ТАБАМИ  -->
+        <section class="tabs-block">
+            <div class="container container--tabs">
+                <ul class="tabs-block__tabs">
+                    <li class="tabs-block__tab tabs-block__tab--active">tab 1</li>
+                    <li class="tabs-block__tab">tab 2</li>
+                    <li class="tabs-block__tab">tab 3</li>
+                </ul>
+
+                <div class="tabs-block__content">
+                    <div class="tabs-block__title title title--black title--size-s">Tabs with soft transitioning effect.
+                    </div>
+                    <div class="tabs-block__text tabs-block-text text text--grey text--size-s">
+                        <p class="tabs-block-text__paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                            Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar
+                            tempor. Cum sociis natoque penatibus et magnis dis parturient montes.
+                        </p>
+                        <p class="tabs-block-text__paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                        </p>
+                    </div>
+                    <a class="tabs-block__button button button--orange" href="#" download="">Download</a>
+                </div>
+                <img class="tabs-block__image" src="img/img_right.png" alt="">
+            </div>
+        </section>
+
+        <!-- БЛОК САБ_ЛИСТ -->
+        <section class="sub-list">
+            <div class="container container--sublist">
+                <img class="sub-list__image" src="img/image_left_sub_list.png" alt="">
+                <div class="sub-list__content">
+                    <div class="sub-list__title title title--black title--size-s">
+                        Sub list section
+                    </div>
+                    <div class="sub-list__line line line--orange"></div>
+                    <div class="sub-list__text text text--grey text--size-s">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                        Proin
+                        gravida dolor sit amet lacus accumsan et viverra justo commodo.
+                    </div>
+
+                    <div class="sub-list__block">
+                        <ul class="sub-list__items sub-list-items">
+                            <li class="sub-list-items__inner">
+                                <div class="sub-list-items__icons"><img src="img/awesome/1.png" alt=""
+                                        class="sub-list-items__icon icon">
+                                </div>
+                                <div>
+                                    <div class="sub-list-items__title">Title</div>
+                                    <div class="sub-list-items__text text text--grey text--size-s">Lorem ipsum dolor
+                                        sit
+                                        amet consectetur
+                                        adipisicing elit Lorem ipsum dolor sit amet consectetur
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="sub-list__items sub-list-items">
+                            <li class="sub-list-items__inner">
+                                <div class="sub-list-items__icons"><img src="img/awesome/1.png" alt=""
+                                        class="sub-list-items__icon icon">
+                                </div>
+                                <div>
+                                    <div class="sub-list-items__title">Title</div>
+                                    <div class="sub-list-items__text text text--grey text--size-s">Lorem ipsum dolor
+                                        sit
+                                        amet consectetur
+                                        adipisicing elit Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                        Quaerat nam a porro atque, cumque
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+
+        <section class="picture-sect">
+            <div class="container container--picture">
+                <div class="picture-sect__inner">
+                    <div class="picture-sect__title title title--black title--size-s">Standart Picture Section</div>
+                    <div class="picture-sect__line line line--orange"></div>
+                    <div class="picture-sect__text picture-sect-text text text--grey text--size-s">
+                        <p class="picture-sect-text__paragraph">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean euismod bibendum laoreet.
+                            Proin gravida dolor sit amet lacus accumsan et viverra justo commodo. Proin sodales pulvinar
+                            tempor. Cum sociis natoque penatibus et magnis dis parturient montes.
+                        </p>
+                        <p class="picture-sect-text__paragraph">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Aenean euismod bibendum laoreet.
+                        </p>
+                    </div>
+                </div>
+                <img class="picture-sect__image" src="img/image_left_sub_list.png" alt="">
+            </div>
+        </section>
+
+        <!-- БЛОК AWESOME  -->
+        <section class="awesome" id="awesome">
+            <div class="container">
+                <div class="awesome__inner">
+                    <div class="awesome__title title title--black title--size-m">
+                        why this is awesome
+                    </div>
+                    <div class="awesome__line line line--orange"></div>
+                    <div class="awesome__text text text--grey text--size-s">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                    <ul class="awesome__list awesome-list">
+                        <li v-for="(awesome, index) in awesomes" class="awesome-list__item awesome-list-item">
+                            <img :src="`img/awesome/${index + 1}.png`" alt="" class="awesome-list-item__icon">
+                            <div class="awesome-list-item__title title title--bold"> {{ awesome.title }} </div>
+                            <div class="awesome-list-item__text text text--grey text--size-s"> {{ awesome.text }} </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- БЛОК PRICING -->
+        <section class="pricing" id="pricing">
+            <div class="container container--pricing">
+                <div class="pricing__inner">
+                    <div class="pricing__title title title--black title--size-m">
+                        pricing option
+                    </div>
+                    <div class="pricing__line line line--orange"></div>
+                    <div class="pricing__text text text--grey text--size-s">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+
+                    <ul class="price-block">
+                        <li v-for="price in prices" class="price-block__block">
+                            <div class="price-block__tariff">
+                                {{ price.tariff }}
+                            </div>
+                            <div class="price-block__cost">
+                                <div class="price-block__value">
+                                    <div class="price-block__currency">$</div>
+                                    <div class="price-block__price">{{ price.price }}</div>
+                                </div>
+
+                                <p class="price-block__term">{{ price.term }}</p>
+                            </div>
+                            <p v-if="true" class="price-block__note">
+                                {{ price.note }}
+                            </p>
+                            <ul class="price-block__features">
+                                <li v-for="text in price.texts" class="price-block__item">
+                                    {{ text }}
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- БЛОК CUSTOMERS -->
+        <section class="customers" id="customers">
+            <div class="container">
+                <div class="customers__inner">
+                    <div class="customers__title title title--black title--size-m">
+                        what our customers are saying
+                    </div>
+                    <div class="customers__line line line--orange"></div>
+                    <div class="customers__text text text--grey text--size-s">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+                    <div class="customers__info">
+                        <ul class="customers__info customers-info">
+                            <li v-for="(customer, index) in customers" class="customers-info__item customers-info-item">
+                                <div class="customers-info-item__text text text--italic text--size-s text--grey">
+                                    {{ customer.text }}
+                                </div>
+
+                                <div class="customers-info-item__personal customers-info-item-personal">
+                                    <img src="img/customers/1.png" alt="" class="customers-info-item-personal__icon">
+                                    <div class="customers-info-item-personal__info">
+                                        <div class="customers-info-item-personal__name">{{ customer.name }} </div>
+                                        <div class="customers-info-item-personal__job">{{ customer.job }} </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- СЕКЦИЯ STYLISH -->
+        <section class="stylish">
+            <div class="container">
+                <div class="stylish__inner">
+                    <div class="stylish__title title title--white title--size-m">
+                        stylish axure design
+                    </div>
+                    <div class="stylish__line line line--white"></div>
+                    <div class="stylish__text text text--white text--size-m">
+                        Use the sections you need, remove the ones you don't. Create gorgeous prototypes faster than
+                        ever!
+                    </div>
+                    <a class="stylish__button button button--white" href="#" download="">Download</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- СЕКЦИЯ КОНТАКТЫ -->
+        <section class="contacts">
+            <div class="container">
+                <div class="contacts__inner">
+                    <div class="contacts__title title title--black title--size-m">
+                        contacts us
+                    </div>
+                    <div class="contacts__line line line--orange"></div>
+                    <div class="contacts__text text text--grey">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </div>
+
+                    <form class="contacts__info contacts-info">
+                        <div class="contacts-info__main">
+                            <input type="name" name="name" placeholder="Name"
+                                class="contacts-info__input contacts-info-input contacts-info-input--long">
+                            <input type="email" name="email" placeholder="Email"
+                                class="contacts-info__input contacts-info-input contacts-info-input--long">
+                            <input type="subject" name="subject" placeholder="Subject"
+                                class="contacts-info__input contacts-info-input contacts-info-input--long">
+                        </div>
+                        <div class="contacts-info__message">
+                            <input type="message" name="message" placeholder="Message"
+                                class="contacts-info__input contacts-info-input contacts-info-input--wide">
+                        </div>
+                    </form>
+                    <button class="contacts__button button button--orange">Send Message</button>
+                </div>
+            </div>
+        </section>
+
+        <footer class="main__footer footer" id="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <ul class="footer__list">
+                        <li v-for="image in images" class="footer__item">
+                            <img :src="`img/footer/${image}.png`" alt="" class="footer__icon">
+                        </li>
+                    </ul>
+                    <div class="footer__text text text--grey text--size-s">2015 Axure Themes</div>
+                </div>
+            </div>
+        </footer>
+    </main>
+    <script src="https://code.jquery.com/jquery-3.6.3.slim.min.js"
+        integrity="sha256-ZwqZIVdD3iXNyGHbSYdsmWP//UBokj2FHAxKuSBKDSo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.5/vue.min.js"></script>
+    <script src="script/index.js"></script>
+
+</body>
+
+</html>
