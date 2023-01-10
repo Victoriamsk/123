@@ -1,0 +1,55 @@
+.container {
+    max-width: 1120px;
+    margin: auto;
+    width: 100%;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    @media (max-width: 1100px) {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    &--header {
+        margin: 0px auto;
+        padding: 0 10px;
+    }
+
+    &--header {
+        @media (max-width: 542px) {
+            justify-content: center;
+
+        }
+    }
+    
+    &--registration {
+        @media (max-width: 1029px) {
+            flex-direction: column;
+        }
+    }
+
+    &--pricing {
+        @media (max-width: 1130px) {
+            justify-content: center;
+        }
+    }
+
+    &--sublist {
+         @media (max-width: 1032px) {
+            flex-direction: column;
+        }
+    }
+
+    &--picture {
+        @media (max-width: 1032px) {
+           flex-direction: column;
+       }
+   }
+
+   &--tabs {
+    @media (max-width: 1017px) {
+       flex-direction: column;
+   }
+}
+}
