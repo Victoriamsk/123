@@ -1,0 +1,28 @@
+
+.stylish {
+    background-color: #9a9a9a;
+    padding: 70px 0 60px 0;
+    text-align: center;
+
+    &__line {
+        margin: 30px auto;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+    }
+
+    &__text {
+        margin-bottom: 35px;
+    }
+
+    &__button {
+        width: 150px;
+        height: 55px;
+        margin: auto;
+    }
+
+    &__inner {
+        width: 100%;
+    }
+}
